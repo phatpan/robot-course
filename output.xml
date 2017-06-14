@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20170128 10:01:04.681" generator="Robot 2.8.7 (Python 2.7.10 on darwin)">
+<suite source="/Users/phatpan/workspace/course/robot-course/search.robot" id="s1" name="Search">
+<test id="s1-t1" name="Search Robot In Google">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${URL}</arg>
+<arg>${BROWSER_DRIVER}</arg>
+</arguments>
+<msg timestamp="20170128 10:01:04.763" level="INFO">Opening browser 'chrome' to base url 'https://www.google.co.th/'</msg>
+<status status="PASS" endtime="20170128 10:01:08.335" starttime="20170128 10:01:04.763"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>lst-ib</arg>
+<arg>robot</arg>
+</arguments>
+<msg timestamp="20170128 10:01:08.335" level="INFO">Typing text 'robot' into text field 'lst-ib'</msg>
+<status status="PASS" endtime="20170128 10:01:08.467" starttime="20170128 10:01:08.335"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20170128 10:01:08.467" critical="yes" starttime="20170128 10:01:04.763"></status>
+</test>
+<kw type="teardown" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20170128 10:01:08.536" starttime="20170128 10:01:08.469"></status>
+</kw>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20170128 10:01:08.536" starttime="20170128 10:01:04.682"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Search">Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
